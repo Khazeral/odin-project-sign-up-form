@@ -1,0 +1,123 @@
+html,
+body {
+  display: flex;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --padding-right-side: 3vw;
+}
+
+@font-face {
+  font-family: "Norse-Bold";
+  src: url("./Norse-Bold.otf");
+}
+
+aside {
+  background-image: url("./background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 100vh;
+}
+
+#odin-logo {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  justify-content: center;
+  margin-top: 31%;
+}
+
+#odin-logo > img {
+  width: 100px;
+  height: auto;
+}
+
+#odin-logo > p {
+  font-family: "Norse-Bold", Calibri;
+  color: white;
+  font-size: 90px;
+  margin: 0;
+  display: flex;
+  align-self: center;
+  padding-top: calc(4vh + 12px);
+}
+
+main {
+  background-color: rgb(248, 250, 252);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 45px;
+}
+
+#form {
+  padding-left: var(--padding-right-side);
+  padding-right: var(--padding-right-side);
+}
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+input:focus {
+  border-color: #007bff;
+  box-shadow: 0px 0px 10px rgba(0, 123, 255, 0.4);
+  outline: none;
+}
+
+button[type="submit"] {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button[type="submit"]:hover {
+  background: linear-gradient(135deg, #0056b3, #004494);
+  transform: scale(1.05);
+}
+
+button[type="submit"]:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+footer p a {
+  color: #007bff;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+footer p a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
